@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+:root{
+    --Red: hsl(0, 100%, 68%);
+    --Very-Dark-Blue: hsl(230, 29%, 20%);
+    --Dark-Grayish-Blue: hsl(230, 11%, 40%);
+    --Grayish-Blue: hsl(231, 7%, 65%);
+    --Light-Grayish-Blue: hsl(207, 33%, 95%);
+    --White:hsl(0, 0%, 100%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, .btn{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+}
+
+main{
+    width: 100vw;
+    padding: 2rem;
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list{
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    right: 2rem;
+    list-style: none;
+    background-color: var(--White);
+    z-index: 10;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px var(--Dark-Grayish-Blue);
+    padding: 2rem;
+}
+
+.login{
+    border-top: 1px solid var(--Dark-Grayish-Blue);
+}
+
+.link{
+    padding-top: 1rem;
+    margin-top: 2rem;
+}
+
+.link > a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--Very-Dark-Blue);
+    font-weight: bold;
+}
+
+.img-container{
+    height: 60vh;
+    width: 50%;
+    background-color: var(--Light-Grayish-Blue);
+    left: 110%;
+    transform: translate(-110%, -10rem);
+    z-index: -1;
+    border-bottom-left-radius: 4rem;
+    position: relative;
+}
+
+.hero{
+    position: absolute;
+    top: 25vh;
+    left: -59%;
+    width: 100vw;
+}
+
+.txt-container{
+    margin-top: -8rem;
+}
+
+.btn-card{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.new{
+    color: var(--Light-Grayish-Blue);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: .4rem 1.25rem;
+    border: none;
+    outline: none;
+    border-radius: 2.7rem;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.monograph{
+    color: var(--Grayish-Blue);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.title{
+    font-size: 3.7rem;
+    color: var(--Very-Dark-Blue);
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+
+.para{
+    font-size: 1.8rem;
+    color: var(--Grayish-Blue);
+}
+
+.demo-btn{
+    background-color: var(--Red);
+    font-size: 1.8rem;
+    color: var(--Light-Grayish-Blue);
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: .4rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+footer{
+    padding: 2rem;
+    text-align: center;
+    color: var(--Grayish-Blue);
+    font-size: 1.8rem;
+}
+
+footer a{
+    color: var(--Very-Dark-Blue);
+    text-decoration: none;
+}
+
+.none{
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    /* main{
+        width: 100vw;
+        position: relative;
+    } */
+    nav{
+        padding: 0 3rem;
+    }
+    .list{
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: none;
+        padding: 0;
+        top: auto;
+        box-shadow: none;
+        gap: 2rem;
+    }
+
+    .login{
+        border-top: none;
+    }
+
+    .login:hover{
+        color: var(--Grayish-Blue);
+    }
+
+    .login:hover > a{
+        text-decoration: underline;
+    }
+
+    .login > a{
+        color: var(--Dark-Grayish-Blue);
+    }
+
+    .link{
+        margin: 0;
+    }
+
+    .link:hover > a{
+        text-decoration: underline;
+    }
+
+    .img-container{
+        width: 60%;
+        height: 75vh;
+        max-height: 50rem;
+    }
+
+    .hero{
+        top: 50%;
+        left: 5rem;
+        width: 140%;
+        height: 70%;
+    }
+
+    .txt-container{
+        position: absolute;
+        top: 60%;
+        left: 3rem;
+        transform: translateY(-50%);
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+
+    .btn-card{
+        margin-top: 3rem;
+    }
+
+    .title span{
+        display: block;
+    }
+
+    .para{
+        margin-top: 3rem;
+    }
+
+    .para span{
+        display: block;
+    }
+
+    .demo-btn:hover{
+        opacity: .7;
+    }
+
+    .menu, .close{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
